@@ -22,7 +22,7 @@ public class Page2 extends AppCompatActivity {
 
     public void SecondNextBtn(View view) {
 
-        Vector<String> reasons=new Vector<String>();
+        String reasons = "";
 
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
@@ -31,23 +31,23 @@ public class Page2 extends AppCompatActivity {
 
         CheckBox checkbox1 = (CheckBox)findViewById(R.id.checkBox1);
         if(checkbox1.isChecked()){
-            reasons.add(checkbox1.getText().toString());
+            reasons += "Business\n";
         }
         CheckBox checkbox2 = (CheckBox)findViewById(R.id.checkBox2);
         if(checkbox2.isChecked()){
-            reasons.add(checkbox2.getText().toString());
+            reasons += "Relaxation\n";
         }
         CheckBox checkbox3 = (CheckBox)findViewById(R.id.checkBox3);
         if(checkbox3.isChecked()){
-            reasons.add(checkbox3.getText().toString());
+            reasons += "Medical Reasons\n";
         }
         CheckBox checkbox4 = (CheckBox)findViewById(R.id.checkBox4);
         if(checkbox4.isChecked()){
-            reasons.add(checkbox4.getText().toString());
+            reasons += "Family Reunion\n";
         }
         CheckBox checkbox5 = (CheckBox)findViewById(R.id.checkBox5);
         if(checkbox5.isChecked()){
-            reasons.add(checkbox5.getText().toString());
+            reasons += "Other\n";
         }
 
         RatingBar ratingBar = (RatingBar)findViewById(R.id.ratingBar);

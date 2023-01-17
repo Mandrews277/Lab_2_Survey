@@ -1,15 +1,21 @@
 package com.example.lab2survey;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Collections;
 import java.util.Vector;
 
 public class Page3 extends AppCompatActivity {
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +28,9 @@ public class Page3 extends AppCompatActivity {
         String age = intent.getStringExtra("age");
         String reasons = intent.getStringExtra("reasons");
         String rating = intent.getStringExtra("rating");
+        //ListView listView = findViewById(R.id.listView);
+        //ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, reasons);
+        //listView.setAdapter(adapter);
         // display the obtained message
         TextView textView = findViewById(R.id.countryText);
         textView.setText(nationality);

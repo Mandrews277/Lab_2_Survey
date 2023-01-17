@@ -22,7 +22,7 @@
     <string name="summary_text">Summary</string>
     <string name="country_text">Country:</string>
     <string name="age_text">Age Range:</string>
-    <string name="reasons_text">Most reasons travel purposes:</string>
+    <string name="reasons_text">Most recent travel purposes:</string>
     <string name="rating_text">Most recent travel rating:</string>
     <string name="Variable_text">Will change</string>
     <string name="submitBtn">SUBMIT</string>

@@ -22,7 +22,7 @@
         android:id="@+id/textView6"
         android:layout_width="205dp"
         android:layout_height="21dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="24dp"
         android:text="@string/country_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,7 +66,6 @@
         android:layout_marginTop="8dp"
         android:text="@string/Variable_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -81,6 +80,17 @@
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <TextView
+        android:id="@+id/reasonsText"
+        android:layout_width="205dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/Variable_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
         android:id="@+id/ratingText"
         android:layout_width="205dp"
         android:layout_height="22dp"
@@ -90,25 +100,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
-    <TextView
-        android:id="@+id/reasonsText"
-        android:layout_width="204dp"
-        android:layout_height="119dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/Variable_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/submitBtn"
         android:onClick="submitBtn"
+        android:text="@string/submitBtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ratingText" />
+        app:layout_constraintTop_toBottomOf="@+id/ratingText"
+        app:layout_constraintVertical_bias="0.238" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
