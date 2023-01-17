@@ -2,6 +2,7 @@ package com.example.lab2survey;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,5 +31,10 @@ public class Page3 extends AppCompatActivity {
         textView.setText(reasons);
         textView = findViewById(R.id.ratingText);
         textView.setText(rating);
+    }
+
+    public void submitBtn(View view) {
+        Intent intent = new Intent(this, Page4.class);
+        startActivity(intent);
     }
 }
